@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#4a2a5e">
+  <meta name="description" content="A cozy café-themed Snake game with power-ups, obstacles and speed boosts.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Friends: Central Snake</title>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">CENTRAL PERK ARCADE</div>
+        <h1>Friends: <span>Central Snake</span></h1>
+      </div>
+      <button id="musicBtn" class="iconBtn" aria-label="Toggle music">♫</button>
+    </header>
+
+    <section class="scoreboard" aria-label="Game statistics">
+      <div><b id="score">0</b><small>SCORE</small></div>
+      <div><b id="best">0</b><small>BEST</small></div>
+      <div><b id="level">1</b><small>LEVEL</small></div>
+      <div><b id="boostState">—</b><small>BOOST</small></div>
+    </section>
+
+    <section class="gameShell">
+      <canvas id="game" width="720" height="720" aria-label="Snake game"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="card">
+          <div class="coffee">☕</div>
+          <h2 id="overlayTitle">How you doin'?</h2>
+          <p id="overlayText">Collect coffee cups, grab power-ups, avoid the couch cushions, and grow your snake.</p>
+          <button id="startBtn" class="primary">Start Game</button>
+          <p class="hint">Arrow keys / WASD · Swipe · Space = pause</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="powerLegend">
+      <div><span class="dot coffeeDot">☕</span><b>Coffee</b><small>+10 points</small></div>
+      <div><span class="dot blue">★</span><b>Boost</b><small>speed burst</small></div>
+      <div><span class="dot pink">♥</span><b>Heart</b><small>extra points</small></div>
+      <div><span class="dot gold">✦</span><b>Star</b><small>double score</small></div>
+    </section>
+
+    <footer>Original game assets · Installable offline · Made for the Central Perk couch</footer>
+  </main>
+  <audio id="bgMusic" src="assets/central-perk-theme.wav" loop preload="auto"></audio>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name":"Friends: Central Snake",
+  "short_name":"Central Snake",
+  "description":"A cozy café-themed Snake game with power-ups, obstacles and speed boosts.",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "orientation":"portrait",
+  "background_color":"#2f1e36",
+  "theme_color":"#4a2a5e",
+  "icons":[
+    {"src":"assets/icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"},
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
